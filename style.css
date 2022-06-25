@@ -8,12 +8,12 @@
 h1{
     font-size: 2em;
     color: var(--title);
+    margin-top: 4rem;
 }
 body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 2rem;
     background-color: var(--light);
     font-family: 'Fira sans', sans-serif;
 }
@@ -85,4 +85,17 @@ p{
     cursor: pointer;
     font-size: 1.25rem;
     text-align: right;
+}
+
+#clearAll{
+    position: absolute;
+    margin: 1.5rem;
+    text-align: right;
+    margin-left: 80rem;
+    color: var(--title);
+    background-color: var(--para);
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+
 }
