@@ -1,0 +1,88 @@
+:root {
+    --title: #5CB5DC;
+    --input: #73BEDE;
+    --add: #629CB7;
+    --light: #E4F6F9;
+    --para: #cff0f8;
+}
+h1{
+    font-size: 2em;
+    color: var(--title);
+}
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2rem;
+    background-color: var(--light);
+    font-family: 'Fira sans', sans-serif;
+}
+button,input{
+    appearance: none;
+    border:none;
+    outline:none;
+    background:none;
+}
+
+.container{
+    width: 35rem;
+    overflow-wrap: break-word;
+}
+
+#inputField,#inputFieldSaved {
+    background-color: #B8E1F7;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    width: 20rem;
+    font-size: 1.25rem;
+}
+
+#inputField::placeholder,#inputFieldSaved::placeholder {
+    color: var(--input);
+}
+
+button{
+    color: var(--add);
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.4s;
+}
+button:hover{
+    opacity: 0.8;
+}
+button:active{
+    opacity: 0.6s;
+}
+
+#addToDo,#addSaved {
+    color: var(--add);
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#addToDo:hover,#addSaved:hover{
+    opacity: 0.8;
+}
+
+#addToDo:active,#addSaved:active{
+    opacity: 0.6;
+}
+
+
+.to-dos {
+    margin-top: 25px;
+}
+
+p{
+    background-color: var(--para);
+    padding: 0.5rem;
+    border-radius: 0.75rem;
+    margin-right: 6rem;
+    color: var(--title);
+    cursor: pointer;
+    font-size: 1.25rem;
+    text-align: right;
+}
